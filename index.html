@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="all-main">
+    <h2>Todo List</h2>
+    <div class="all-box-get">
+        <label for="add-task">
+            <input id="add-task" placeholder="ADD A TASK" type="text">
+        </label>
+        <div class="button-add-task"></div>
+        <div class="all-box-filter">
+            <label>
+                <select name="todos" class="filter_todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="all-box-print-work">
+        <ul class="box-print-work"></ul>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>

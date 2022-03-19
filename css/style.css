@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: IRANYekanBold;
+    src: url("../font/IRANYekanBold.ttf") format("truetype");
+}
+
+div.all-main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /*background: url("../imag/Hexagon.svg") center no-repeat;*/
+    /*background-size: cover;*/
+}
+
+h2 {
+    font-family: IRANYekanBold, sans-serif;
+    width: 50%;
+    height: 100px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #525e6e;
+}
+
+div.all-box-get {
+    width: 49%;
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+input#add-task {
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-family: IRANYekanBold, sans-serif;
+    padding-left: 45px;
+    font-size: 0.9rem;
+    caret-color: red;
+    color: #656565;
+}
+
+input#add-task::placeholder {
+    font-family: IRANYekanBold, sans-serif;
+    color: #a8a8a8;
+}
+
+div.button-add-task {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    background: url("../imag/plus-positive-add-mathematical-symbol.png") red no-repeat center;
+    border-radius: 7px;
+}
+
+div.all-box-filter {
+    width: 200px;
+    height: 40px;
+    margin-left: 60px;
+    background: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+    font-family: IRANYekanBold, sans-serif;
+
+}
+
+div.all-box-filter select.filter_todo {
+    color: #656565;
+    font-size: 0.9rem;
+    line-height: 43px;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    background-image: none;
+}
+
+div.all-box-print-work {
+    width: 49%;
+    height: auto;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.box-print-work {
+    width: 667px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+li.print-work {
+    width: 667px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: IRANYekanBold, sans-serif;
+}
+
+li.print-work:first-child {
+    margin-top: 28px;
+}
+
+li.print-work:last-child {
+    margin-bottom: 28px;
+}
+
+p.get-text {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 25px;
+    font-size: 0.87rem;
+    color: #656565;
+    margin: 8px 0;
+}
+
+p.get-text-perform {
+    color: #a8a8a8;
+    text-decoration: 3px red line-through;
+}
+
+div.button-perform {
+    background-color: blue;
+    height: 22px;
+    width: 70px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 24px;
+    margin: 8px 0 8px 55px;
+    cursor: pointer;
+}
+
+div.button-delete {
+    background-color: red;
+    height: 22px;
+    width: 70px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    font-size: 0.7rem;
+    margin: 8px 0 8px 15px;
+    cursor: pointer;
+}
